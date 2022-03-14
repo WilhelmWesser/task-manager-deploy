@@ -1,0 +1,6 @@
+{
+  "port": 8080,
+  "mongoUri": "mongodb+srv://nazar:diploma-project-task-manager-nazar@cluster0.35heg.mongodb.net/diplomaApp?retryWrites=true&w=majority",
+  "accessSecret": "super secret task manager from backend",
+  "refreshSecret": "super secret refresh task manager key"
+}
