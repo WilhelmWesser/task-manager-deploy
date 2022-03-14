@@ -4,8 +4,8 @@ const auth = require('../middleware/auth.middleware')
 const Task = require('../models/Task')
 
 
-// api/task/
-router.get('/', auth, async (req, res) => {
+// api/task/getAllTasks
+router.get('/getAllTasks', auth, async (req, res) => {
     try {
         const {orderBy, equalTo} = req.query
         const tasksList = await Task.find({ [orderBy]: equalTo })

@@ -3,7 +3,7 @@ const taskEndpoint = "task/";
 
 const taskService = {
     fetchAll: async (pageId) => {
-        const { data } = await httpService.get(taskEndpoint, {
+        const { data } = await httpService.get(taskEndpoint + "getAllTasks/", {
             params: {
                 orderBy: "pageId",
                 equalTo: `${pageId}`
